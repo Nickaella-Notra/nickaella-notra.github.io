@@ -292,6 +292,14 @@
   .user-container{
     padding-top: 70px;
   }
+  .contactlogo{
+    height: 80px;
+    width: 400px;
+    border-radius: 50%;
+    margin: 10px auto;
+    border: 4px solid white;
+    position: relative;
+  }
 }
 
 /* Style the counter cards */
