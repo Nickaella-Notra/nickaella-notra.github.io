@@ -1,12 +1,17 @@
+@font-face {
+  font-family: Josefin Sans;
+  src: url(https://fonts.googleapis.com/css?family=JosefinSans);
+}
 *{
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: Josefin Sans;
   }
   body{
-    font-family: montserrat;
+    font-family: Josefin Sans;
     background: #dfefff;
   }
   nav{
@@ -52,7 +57,7 @@
   }
   .checkbtn{
     font-size: 30px;
-    color: white;
+    color: #424244;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -62,7 +67,7 @@
   #check{
     display: none;
   }
-  @media (max-width: 952px){
+  @media (max-width: 1500){
     label.logo{
       font-size: 30px;
       padding-left: 50px;
@@ -71,7 +76,7 @@
       font-size: 16px;
     }
   }
-  @media (max-width: 858px){
+  @media (max-width: 600px){
     .checkbtn{
       display: block;
     }
@@ -79,11 +84,12 @@
       position: fixed;
       width: 100%;
       height: 100vh;
-      background: #424244;
+      background: white;
       top: 80px;
       left: -100%;
       text-align: center;
       transition: all .5s;
+      z-index: 1;
     }
     nav ul li{
       display: block;
@@ -94,8 +100,12 @@
       font-size: 20px;
     }
     nav ul li a:hover,nav ul li a.active{
-      background: none;
       color: #424244;
+      background: #dfefff;
+      transition: .8s;
+      padding: 10px 30px;
+      border-radius: 10px;
+
     }
     #check:checked ~ ul{
       left: 0;
@@ -109,7 +119,7 @@
     align-content: center;
     padding: 50px;
     color:#424244;
-    line-height: 3;
+    line-height: 2;
   }
   .user-container{
     background-color: rgba(255, 255, 255, 0.2);
@@ -121,14 +131,17 @@
     padding: 5%;
   }
   .picuser{
-    height: 200px;
-    width: 200px;
-    margin: -30px 0;
+    border: 8px solid white;
+    height: 250px;
+    width: 250px;
+    margin: -40px 0;
     border-radius: 50%;
     /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5); */
   }
   h1{
     font-size: 50px;
+    padding-top: 28px;
+    color: #484c89;
   }
   .social{
     display: inline-flex;
@@ -145,7 +158,7 @@
     
   }
   p{
-    font-size: 12px;
+    font-size: 18px;
   }
   .resumebtn{
     text-decoration: none;
@@ -202,7 +215,7 @@
     height: 40px;
     width: 40px;
     float: left;
-    margin: 5px 0 0 30px;
+    margin: -5px 0 0 20px;
   }
   
   .grid-item {
@@ -253,11 +266,30 @@
 }
 
 /* Responsive columns */
-@media screen and (max-width: 1000px) and (min-width: 500px){
+@media screen and (max-width: 1500px){
   .column {
     width: 50%;
     display: inline-block;
     margin: 3% 0;
+  }
+  h1{
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 600px){
+  .column {
+    width: 100%;
+    display: inline-block;
+    margin: 3% 0;
+  }
+  .social{
+    margin-left: -25px;
+  }
+  .user-container{
+    padding-top: 70px;
   }
 }
 
@@ -302,7 +334,7 @@
 .cpic {
   height: 80px;
   width: 80px;
-  margin: 0 20px 0 0;
+  margin: -10px 20px 0 0;
   /* grid-area: 1 / 1 / 3 / 2; */
   float: left;
 }
@@ -359,6 +391,48 @@
     display: block;
     margin-bottom: 20px;
   }
+  .submitbtn{
+    margin-top: -20px;
+  }
+
+}
+@media screen and (max-width: 600px){
+  .ccolumn {
+    width: 50%;
+  }
+  .contact-container2{
+    width: 200%;
+    height: 100%;
+    padding: 10px;
+  }
+  .message{
+    font-size: 20px;
+    padding-top: 25px;
+  }
+  .submitbtn{
+    margin: -50px 0 0 -15px;
+    transform: scale(0.8);
+  }
+  .getintouch{
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  .cpic {
+    height: 100%;
+    width: 100%;
+  }
+  .contactbtn{
+    transform: scale(0.6);
+    margin: -20px -27px 0 -40px;
+  }
+  .contactsocial, .contactinfo{
+    color: transparent;
+    font-size: 10px;
+  }
+  .contact-container2{
+    margin-top: -75px;
+  }
+
 }
 
 /* Style the counter cards */
@@ -425,6 +499,7 @@ input[type=text]{
   padding: 0px;
   color:#424244;
   width: 100%;
+ 
 }
 .pcolumn {
   float: inline-start;
@@ -457,13 +532,25 @@ input[type=text]{
     margin-left: 10%;
   }
 }
+@media screen and (max-width: 600px){
+  .pcolumn {
+    width: 45%;
+    display: block;
+    text-align: center;
+    margin: 10px;
+  }
+  .prow {
+    margin-left: 0%;
+  }
+
+}
 
 /* Style the counter cards */
 .pcard {
-  padding: 16px;
+  padding: 25px;
   text-align: center;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: relative;
@@ -487,8 +574,163 @@ h3{
   text-align: center;
   color: #002451;
   font-size: 20px;
+  margin: 10px 0;
 }
 .pinfo{
-  text-align: center;
+  text-align: left;
   margin-top: -15px;
+  line-height: 2;
+  padding: 0 20px;
+}
+.pcolumn2 {
+  float: inline-start;
+  margin: 0 0 0 15px;
+  padding: 0 5px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.prow2 {
+  margin-left: 21.5%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.prow2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1500px){
+  .pcolumn2 {
+    width: 40%;
+    display: block;
+    text-align: center;
+    margin: 20px;
+  }
+  .prow2 {
+    margin-left: 10%;
+  }
+
+}
+@media screen and (max-width: 600px){
+  .pcolumn2 {
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin: 20px;
+  }
+  .prow2 {
+    margin-left: 10%;
+  }
+
+}
+
+/* Style the counter cards */
+.pcard2 {
+  padding: 25px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all .1s ease-in;
+  height: 600px;
+  width: 350px;
+  &:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  }
+}
+.ppic2 {
+  height: 150px;
+  width: 280px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 36, 81, 0.1);
+}
+
+.pcolumn3 {
+  float: inline-start;
+  margin: 0 0 0 15px;
+  padding: 0 5px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.prow3 {
+  margin-left: 21.5%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.prow3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.ptitle3{
+  color: #002451;
+  line-height: 1;
+    padding: 30px 0;
+
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1500px){
+  .pcolumn3 {
+    width: 30%;
+    display: block;
+    text-align: center;
+    margin: 20px;
+    margin-left: 10%;
+  
+  }
+  .pcard3{
+    height: 350px;
+    width: 500px;
+    padding-top: 20px;
+  }
+  .prow3 {
+    margin-left: 10%;
+  }
+
+}
+@media screen and (max-width: 600px){
+  .pcolumn3 {
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin: 20px;
+    height: 500px;
+  }
+  .prow3 {
+    margin-left: 10%;
+  }
+
+
+}
+/* Style the counter cards */
+.pcard3 {
+  padding: 25px 15px 20px 15px;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+  height: 450px;
+  max-width: 250px; 
+  line-height: 0;
+  &:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  }
+}
+.ppic3 {
+  height: 150px;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 36, 81, 0.1);
 }
