@@ -145,6 +145,7 @@
   }
   .social{
     display: inline-flex;
+    margin-left: -15px;
   }
   .social a img:hover{
     transform: scale(1.1);
