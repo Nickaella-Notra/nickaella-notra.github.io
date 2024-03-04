@@ -1508,6 +1508,9 @@ Free Quote
   color: #38373f;
 }
 
+.em1{
+  color: #38373f !important;
+}
 
 .free-quote {
   background-image: url(../../images/bg2.jpg);
