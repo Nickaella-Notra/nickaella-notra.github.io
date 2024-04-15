@@ -1507,7 +1507,14 @@ Free Quote
 #educ h3{
   color: #38373f;
 }
+.buttons {
+  display: flex;
+  flex-wrap: nowrap; /* Ensures the buttons stay in one line */
+}
 
+.buttons a {
+  margin-right: 10px; /* Adjust the spacing between buttons */
+}
 .em1{
   color: #38373f !important;
 }
