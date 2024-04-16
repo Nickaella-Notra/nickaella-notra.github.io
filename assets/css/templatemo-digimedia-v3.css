@@ -119,9 +119,14 @@ a {
   text-decoration: none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.h4{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #8d99af;
 }
 
 .h6web{
@@ -948,7 +953,7 @@ Banner Style
 
 .main-banner .left-content h6 {
   text-transform: capitalize;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -958,9 +963,10 @@ Banner Style
   z-index: 2;
   position: relative;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 80px;
   color: #2a2a2a;
   margin-bottom: 20px;
+  opacity: 0.9;
 }
 
 .main-banner .left-content p {
@@ -1595,6 +1601,11 @@ Portfolio
 */
 .pIcon{
   padding: 15%;
+  font-size: 15px;
+  text-align: center;
+}
+.prof{
+  font-size: 15px;
 }
 .our-portfolio {
   padding-top: 130px;
@@ -2116,7 +2127,7 @@ responsive
     margin-bottom: 30px;
   }
   .about-left-image img {
-    margin-right: 0px;
+    margin-right: 10px;
     margin-bottom: 45px;;
   }
   .services .naccs .menu div {
