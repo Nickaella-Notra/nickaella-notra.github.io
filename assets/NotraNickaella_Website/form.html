@@ -1,0 +1,40 @@
+<!-- Nickaella A. Notra
+WD-201 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>SIGN IN</title>
+	<link rel="stylesheet" href="signin.css">
+	
+</head>
+<body>
+	<div id="container">
+		<h1 id="quote">We Are <span>vAlorant</span></h1>
+		<form id="form" action="home2.html" method="post" name="form" onsubmit="return validated()">
+			
+			<div id="email">Email</div>
+			<input spellcheck="false" autocomplete="off" type="text" name="email">
+			<div id="eError">INVALID EMAIL</div>
+
+			<div id="passwd">Password</div>
+			<input spellcheck="false" type="password" name="password">
+			<div id="pError">INVALID PASSWORD</div>
+			<br>
+			<label id="check">Remember Password?
+				<input type="checkbox" checked="checked">
+				<span id="checkmark"></span>
+			</label>
+			<button type="submit">SIGN IN</button>
+
+			<br>
+			<a id="home" href = "home2.html">HOME</a>
+			<br>
+
+		</form>
+	</div>	
+	<script src="signin.js"></script>
+
+</body>
+</html>

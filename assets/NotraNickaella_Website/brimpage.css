@@ -1,0 +1,219 @@
+/*Nickaella A. Notra
+WD-201*/
+
+@font-face { font-family: BEBAS; src: url(fonts/Bebas-Regular.ttf);}
+@font-face { font-family: VALORANT; src: url(fonts/Valorant Font.ttf);}
+@font-face { font-family: TUNGSTEN; src: url(fonts/FontsFree-Net-Tungsten-Bold.ttf);}
+
+*{
+	margin:0;
+	padding: 0;}
+body{zoom: 100%}
+header{
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: relative}
+#valorantagents{
+	font-family: VALORANT;
+	text-decoration: none;
+	background: #231F20;
+	display: block;
+	padding: 5px 0 2px 3px;}
+#valorant{color: #F24956}
+#agents{color: ghostwhite}
+#valorantagents:hover{opacity: 0.8;}
+
+#agentnames{
+	background: #231F20;
+	display: flex;
+	justify-content: space-between;
+	align-items: center}
+#agentlinks li{
+	list-style: none;
+	display: inline-block;
+	padding: 0 2px 0 0;
+	position: relative;}
+#brim, #phoe, #sage{
+	color: ghostwhite;
+	font-family: BEBAS;
+	font-size: 13px;}
+#signin{
+	color: #F24956;
+	font-size: 10px; 
+	font-family: VALORANT;}
+#agentlinks li a{
+	text-decoration: none;
+	padding: 6px 5px 0px 5px}
+
+
+#ph::after, #sa::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #F24956;
+	display: block;
+	margin: auto;
+	transition: 0.5s ease}
+
+#br::after{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #F24956;
+	display: block;
+	margin: auto;}
+
+#ph:hover::after, #sa:hover::after{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #F24956;
+	display: block;
+	margin: auto;}
+
+#agentlinks li:active{opacity: 0.5}
+
+#brimsec1{
+	background-color: #F24956;
+	min-height: 2em;
+	text-align: left;
+	color: #E8DDDC;
+	font-family: TUNGSTEN;
+	font-size: 10px;
+	padding-left: 5px;
+	padding-right: -5px;}
+
+
+aside{
+	text-align: right;
+	float: right;
+	padding: 0 10% 0 0;
+	position: absolute;
+	right: 5%;
+	z-index: 4;}
+
+aside h1, #details{
+	display: inline-block;
+	font-family: VALORANT;
+	font-size: 60px;
+	margin: -15px;}
+
+#brimname{
+	color: ghostwhite;
+	padding-bottom: 0;}
+
+#stone{
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 0.1px ghostwhite}
+
+aside h2{
+	color: ghostwhite;
+	font-family: TUNGSTEN}
+
+aside img{
+	width: 50px;
+	height: 50px;}
+
+
+#details{margin: 0 -10px 0 70%}
+
+
+#details p{
+	font-family: BEBAS;
+	color: ghostwhite;
+	font-size: 7px;
+	padding: 0 0 5px 2px;
+	text-align: justify;}
+
+#details img{
+	opacity:  0.5;
+	padding: 5px 2px 0 2px;}
+
+
+#brimsec2{
+	background-image: url(images/homepic6.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 12em;
+	width: 100%;
+	text-align: center;
+	padding-top: 2em}
+
+#brimpic{
+	width: 14em;
+	text-align: center;
+    margin: -7% 30% 0 0;
+    text-align: center}
+
+
+#abilities{
+	background-image: url(images/bgtext2.png);
+	background-color: #EAE6E5;
+	background-size: cover;
+	color: #231F20;
+	text-align: center;
+	font-family: BEBAS;
+	padding: 2em 5em 2em 5em}
+
+#abilities table{
+	margin: auto auto;
+	border-collapse: collapse;
+	text-align: center}
+
+#abilities h2{
+	color: #38424B;
+	font-family: VALORANT;
+	font-size: 40px;
+	text-align: right;
+	padding: 0 25px 0 0}
+
+#abilities h3{
+	font-size: 30;
+	color: #BF5757}
+
+#abilities p{
+	font-size: 10px;
+	padding: 0 50px 0 50px;}
+
+#abilities video{
+	width: 240px;
+	height: 160px}
+
+
+footer{
+	font-size: 10px;
+	color: #231F20;
+	text-align: center;
+	font-family: VALORANT;
+	text-decoration: none;
+	background: #BF5757;
+	display: block;
+	padding: 5px 0 2px 3px;}
+
+footer a{
+	font-family: BEBAS;
+	color: ghostwhite;
+	text-decoration: none;
+	justify-content: space-between;
+	align-items: center;
+	display: inline-block;
+	position: relative;
+	padding: 0 2em 0.5em 2em}
+
+footer a::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	display: block;
+	margin: auto;
+	transition: 0.5s ease}
+
+footer a:hover:after{
+	content: '';
+	width: 100%;
+	height: 1.5px;
+	background: #231F20;
+	display: block;
+	margin: auto;}
